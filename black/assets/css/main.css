@@ -2914,202 +2914,235 @@ input, select, textarea {
 
 /* Header */
 
-	#header {
-		padding: 9em 0 9em 0 ;
-		background-color: #121212;
-		color: rgba(255, 255, 255, 0.75);
-		background-attachment: fixed,							fixed,							fixed;
-		background-image: url(images/background.jpg);
-		background-position: top left,						center center,					center center;
-		background-size: auto,							cover,							cover;
-		overflow: hidden;
-		position: relative;
-		text-align: center;
-	}
+#header {
+    padding: 9em 0 9em 0;
+    background-color: #121212;
+    color: rgba(255, 255, 255, 0.75);
+    background-attachment: fixed, fixed, fixed;
+    background-image: url(images/background.jpg);
+    background-position: top left, center center, center center;
+    background-size: auto, cover, cover;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
 
-		#header a {
-			border-bottom-color: rgba(255, 255, 255, 0.5);
-		}
+#header .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(18, 18, 18, 0.8); /* Semi-transparent background */
+}
 
-			#header a:hover {
-				color: #ffffff;
-			}
+#header .header-top .logo img {
+    height: 50px; /* Adjust as needed */
+}
 
-		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6, #header strong, #header b {
-			color: #ffffff;
-		}
+#header .header-top .header-buttons {
+    display: flex;
+    gap: 1em; /* Space between buttons */
+}
 
-		#header header p {
-			color: #ffffff;
-		}
+#header .header-top .header-buttons .button {
+    background: none;
+    color: rgb(29, 202, 242);
+    border: 1px solid rgb(29, 202, 242);
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
 
-		#header header.major:after {
-			background: #ffffff;
-		}
+#header .header-top .header-buttons .button:hover {
+    background: rgb(29, 202, 242);
+    color: #fff;
+}
 
-		#header input[type="submit"],
-		#header input[type="reset"],
-		#header input[type="button"],
-		#header button,
-		#header .button {
-			box-shadow: inset 0 0 0 1px #ffffff;
-			color: #ffffff !important;
-		}
+#header a {
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
 
-			#header input[type="submit"]:hover,
-			#header input[type="reset"]:hover,
-			#header input[type="button"]:hover,
-			#header button:hover,
-			#header .button:hover {
-				background-color: rgba(255, 255, 255, 0.125);
-			}
+#header a:hover {
+    color: #ffffff;
+}
 
-			#header input[type="submit"]:active,
-			#header input[type="reset"]:active,
-			#header input[type="button"]:active,
-			#header button:active,
-			#header .button:active {
-				background-color: rgba(255, 255, 255, 0.25);
-			}
+#header h1, #header h2, #header h3, #header h4, #header h5, #header h6, #header strong, #header b {
+    color: #ffffff;
+}
 
-			#header input[type="submit"].primary,
-			#header input[type="reset"].primary,
-			#header input[type="button"].primary,
-			#header button.primary,
-			#header .button.primary {
-				background-color: #ffffff;
-				box-shadow: inset 0 0 0 1px #ffffff !important;
-				color: #4686a0 !important;
-			}
+#header header p {
+    color: #ffffff;
+}
 
-				#header input[type="submit"].primary:hover,
-				#header input[type="reset"].primary:hover,
-				#header input[type="button"].primary:hover,
-				#header button.primary:hover,
-				#header .button.primary:hover {
-					background-color: rgba(255, 255, 255, 0.125) !important;
-					color: #ffffff !important;
-				}
+#header header.major:after {
+    background: #ffffff;
+}
 
-				#header input[type="submit"].primary:active,
-				#header input[type="reset"].primary:active,
-				#header input[type="button"].primary:active,
-				#header button.primary:active,
-				#header .button.primary:active {
-					background-color: rgba(255, 255, 255, 0.25) !important;
-				}
+#header input[type="submit"],
+#header input[type="reset"],
+#header input[type="button"],
+#header button,
+#header .button {
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important;
+}
 
-		#header ul.major-icons li .icon {
-			border-color: #ffffff;
-		}
+#header input[type="submit"]:hover,
+#header input[type="reset"]:hover,
+#header input[type="button"]:hover,
+#header button:hover,
+#header .button:hover {
+    background-color: rgba(255, 255, 255, 0.125);
+}
 
-		#header .icon.major {
-			color: #ffffff;
-		}
+#header input[type="submit"]:active,
+#header input[type="reset"]:active,
+#header input[type="button"]:active,
+#header button:active,
+#header .button:active {
+    background-color: rgba(255, 255, 255, 0.25);
+}
 
-		#header h1 {
-			margin: 0;
-		}
+#header input[type="submit"].primary,
+#header input[type="reset"].primary,
+#header input[type="button"].primary,
+#header button.primary,
+#header .button.primary {
+    background-color: #ffffff;
+    box-shadow: inset 0 0 0 1px #ffffff !important;
+    color: #4686a0 !important;
+}
 
-		#header p {
-			margin: 1em 0 0 0;
-		}
+#header input[type="submit"].primary:hover,
+#header input[type="reset"].primary:hover,
+#header input[type="button"].primary:hover,
+#header button.primary:hover,
+#header .button.primary:hover {
+    background-color: rgba(255, 255, 255, 0.125) !important;
+    color: #ffffff !important;
+}
 
-		#header .actions {
-			-moz-justify-content: center;
-			-webkit-justify-content: center;
-			-ms-justify-content: center;
-			justify-content: center;
-			margin-top: 2.5em;
-			margin-left: 0;
-			position: relative;
-		}
+#header input[type="submit"].primary:active,
+#header input[type="reset"].primary:active,
+#header input[type="button"].primary:active,
+#header button.primary:active,
+#header .button.primary:active {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+}
 
-			#header .actions li:first-child {
-				padding-left: 0;
-			}
+#header ul.major-icons li .icon {
+    border-color: #ffffff;
+}
 
-			#header .actions:after {
-				background: #ffffff;
-				content: '';
-				height: 100vh;
-				left: 50%;
-				position: absolute;
-				top: 100%;
-				width: 1px;
-			}
+#header .icon.major {
+    color: #ffffff;
+}
 
-		#header .inner {
-			-moz-transition: -moz-transform 1.5s ease, opacity 2s ease;
-			-webkit-transition: -webkit-transform 1.5s ease, opacity 2s ease;
-			-ms-transition: -ms-transform 1.5s ease, opacity 2s ease;
-			transition: transform 1.5s ease, opacity 2s ease;
-			-moz-transition-delay: 0.25s;
-			-webkit-transition-delay: 0.25s;
-			-ms-transition-delay: 0.25s;
-			transition-delay: 0.25s;
-			-moz-transform: scale(1);
-			-webkit-transform: scale(1);
-			-ms-transform: scale(1);
-			transform: scale(1);
-			opacity: 1;
-			position: relative;
-			z-index: 1;
-		}
+#header h1 {
+    margin: 0;
+}
 
-			#header .inner .actions {
-				-moz-transition: -moz-transform 1.25s ease;
-				-webkit-transition: -webkit-transform 1.25s ease;
-				-ms-transition: -ms-transform 1.25s ease;
-				transition: transform 1.25s ease;
-				-moz-transition-delay: 1s;
-				-webkit-transition-delay: 1s;
-				-ms-transition-delay: 1s;
-				transition-delay: 1s;
-				-moz-transform: translateY(0);
-				-webkit-transform: translateY(0);
-				-ms-transform: translateY(0);
-				transform: translateY(0);
-				opacity: 1;
-			}
+#header p {
+    margin: 1em 0 0 0;
+}
 
-		#header:after {
-			-moz-transition: opacity 1s ease;
-			-webkit-transition: opacity 1s ease;
-			-ms-transition: opacity 1s ease;
-			transition: opacity 1s ease;
-			background-image: url(images/background.jpg);
-			content: '';
-			height: 100%;
-			left: 0;
-			opacity: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
+#header .actions {
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    margin-top: 2.5em;
+    margin-left: 0;
+    position: relative;
+}
 
-	body.is-preload #header .inner {
-		-moz-transform: scale(1.05);
-		-webkit-transform: scale(1.05);
-		-ms-transform: scale(1.05);
-		transform: scale(1.05);
-		opacity: 0;
-	}
+#header .actions li:first-child {
+    padding-left: 0;
+}
 
-		body.is-preload #header .inner .actions {
-			-moz-transform: translateY(30em);
-			-webkit-transform: translateY(30em);
-			-ms-transform: translateY(30em);
-			transform: translateY(30em);
-			opacity: 0;
-		}
+#header .actions:after {
+    background: #ffffff;
+    content: '';
+    height: 100vh;
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    width: 1px;
+}
 
-	body.is-preload #header:after {
-		opacity: 1;
-	}
+#header .inner {
+    -moz-transition: -moz-transform 1.5s ease, opacity 2s ease;
+    -webkit-transition: -webkit-transform 1.5s ease, opacity 2s ease;
+    -ms-transition: -ms-transform 1.5s ease, opacity 2s ease;
+    transition: transform 1.5s ease, opacity 2s ease;
+    -moz-transition-delay: 0.25s;
+    -webkit-transition-delay: 0.25s;
+    -ms-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+
+#header .inner .actions {
+    -moz-transition: -moz-transform 1.25s ease;
+    -webkit-transition: -webkit-transform 1.25s ease;
+    -ms-transition: -ms-transform 1.25s ease;
+    transition: transform 1.25s ease;
+    -moz-transition-delay: 1s;
+    -webkit-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    transition-delay: 1s;
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#header:after {
+    -moz-transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+    -ms-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+    background-image: url(images/background.jpg);
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+body.is-preload #header .inner {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 0;
+}
+
+body.is-preload #header .inner .actions {
+    -moz-transform: translateY(30em);
+    -webkit-transform: translateY(30em);
+    -ms-transform: translateY(30em);
+    transform: translateY(30em);
+    opacity: 0;
+}
+
+body.is-preload #header:after {
+    opacity: 1;
+}
 
 /* Footer */
-
 	#footer {
 		padding: 6em 0 6em 0 ;
 		background-color:#121212;
@@ -3512,3 +3545,40 @@ input, select, textarea {
 			}
 
 	}
+
+/* Ensure specific targeting for header buttons */
+#header .header-top .header-buttons .button {
+    background: none;
+    color: #ffffff !important; /* Default white text */
+    border: 1px solid #ffffff; /* Default white border */
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: none; /* Remove any additional box shadows */
+    display: flex; /* Use flexbox to center text */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+}
+
+#header .header-top .header-buttons .button:hover {
+    background: none; /* Ensure background stays transparent */
+    color: rgb(29, 202, 242) !important; /* Blue text on hover */
+    border: 1px solid rgb(29, 202, 242); /* Blue border on hover */
+}
+
+/* Apply these styles to the specific button class if needed */
+#header .header-top .header-buttons .button.small {
+    font-size: 0.9em;
+    padding: 0.5em 1em;
+}
+
+/* Ensure this rule does not conflict with the header buttons */
+#header input[type="submit"],
+#header input[type="reset"],
+#header input[type="button"],
+#header button,
+#header .button {
+    box-shadow: inset 0 0 0 1px #ffffff;
+    color: #ffffff !important;
+    background: transparent; /* Ensure background is transparent */
+}
