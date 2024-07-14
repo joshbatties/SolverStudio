@@ -79,7 +79,7 @@ input, select, textarea {
 
 	body {
 		background: #f0f4f4;
-		color: rgb(29,202,242);
+		color: black;
 		font-size: 15pt;
 		line-height: 1.85em;
 		font-family: 'Source Sans Pro', sans-serif;
@@ -106,7 +106,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
-		color: rgb(29,202,242);
+		color: black;
 		line-height: 1.25em;
 	}
 
@@ -135,7 +135,7 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 400;
-		color: black;
+		color: rgb(29,202,242);
 	}
 
 	em, i {
@@ -2175,7 +2175,7 @@ input, select, textarea {
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
-		color: #fff;
+		color: black;
 		text-align: center;
 		padding: 7.5em 0 2em 0;
 		cursor: default;
@@ -2206,7 +2206,7 @@ input, select, textarea {
 			}
 
 		#header h1 {
-			color: #fff;
+			color: black;
 			font-size: 3em;
 			line-height: 1em;
 		}
@@ -2371,7 +2371,7 @@ input, select, textarea {
 			}
 
 			.dropotron li:hover {
-				color: #ef8376;
+				color: rgb(29,202,242);
 			}
 
 			.dropotron li a, .dropotron li span {
@@ -2455,13 +2455,13 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 		padding: 6em 0 6em 0;
-		background: #2b252c;
-		color: #fff;
+		background: white;
+		color: black;
 	}
 
 		#footer .icon.circled {
 			background: #fff;
-			color: #2b252c;
+			color: black;
 		}
 
 		#footer header {
@@ -2470,7 +2470,7 @@ input, select, textarea {
 		}
 
 		#footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
-			color: #fff;
+			color: black;
 		}
 
 		#footer .contact {
@@ -2484,17 +2484,17 @@ input, select, textarea {
 
 		#footer .copyright {
 			text-align: center;
-			color: rgba(128, 128, 128, 0.75);
+			color: black;
 			font-size: 0.8em;
 			cursor: default;
 		}
 
 			#footer .copyright a {
-				color: rgba(128, 128, 128, 0.75);
+				color: black;
 			}
 
 				#footer .copyright a:hover {
-					color: rgba(212, 212, 212, 0.85);
+					color: black;
 				}
 
 /* Carousel */
@@ -2544,7 +2544,7 @@ input, select, textarea {
 			}
 
 			.carousel .forward:hover:before, .carousel .backward:hover:before {
-				background-color: rgba(239, 131, 118, 0.75);
+				background-color: rgb(29,202,242);
 			}
 
 		.carousel .forward {
